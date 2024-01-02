@@ -59,3 +59,4 @@ C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\Sourabh_Digi
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\Sourabh_Digital_Studio\obj\Debug\net8.0\Sourabh_Digital_Studio.pdb
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\Sourabh_Digital_Studio\obj\Debug\net8.0\Sourabh_Digital_Studio.genruntimeconfig.cache
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\Sourabh_Digital_Studio\obj\Debug\net8.0\ref\Sourabh_Digital_Studio.dll
+C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\Sourabh_Digital_Studio\obj\Debug\net8.0\Sourabh_Digital_Studio.sourcelink.json

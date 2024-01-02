@@ -44,20 +44,22 @@ public class HomeController : Controller
     [HttpPost]
      public IActionResult Login(string Username,string Password)
     { 
-              System.Console.WriteLine(Username+" "+Password);
+             // System.Console.WriteLine(Username+" "+Password);
         List<User>user=DBManager.GetallUList();
         foreach(User u in user){
             Console.WriteLine(u.Username+u.Password);
-            if(u.Username.Equals(Username)&&u.Password.Equals(Password)){
-                Console.WriteLine("Valid User");
+            if(u.Username.Equals(Username)&&(u.Password.Equals(Password))){
+                Console.WriteLine("true");
                 Response.Redirect("/Home/Welcome");
+            }else {
+                System.Console.WriteLine("Not valid");
             }
         }return View();
 
     }
 
 
-    public IActionResult Privacy()
+    public IActionResult Welcome()
     {
         return View();
     }

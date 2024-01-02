@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sourabh_Digital_Studio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66598fb4fc46a329b33635e7f9e6c00364f259f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sourabh_Digital_Studio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sourabh_Digital_Studio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
