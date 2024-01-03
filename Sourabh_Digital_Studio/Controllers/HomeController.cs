@@ -32,7 +32,7 @@ public class HomeController : Controller
         u.Emailid=Emailid;
         u.Phone=Phone;
         u.Password=Password;
-        DBManager.RegisterData(u);
+        DBManager.insertData(u);
         
         return View();
 
@@ -57,10 +57,42 @@ public class HomeController : Controller
         }return View();
 
     }
+    public IActionResult Update(string Username,string Password,string Emailid)
+    {
+        User u=new User();
+        u.Username=Username;
+        u.Password=Password;
+        u.Emailid=Emailid;
+        DBManager.UpdateData(u);
+
+        return View();
+    }
+    public IActionResult Insert(string Username,string Password,string Emailid)
+    {
+        User u=new User();
+        u.Username=Username;
+        u.Password=Password;
+        u.Emailid=Emailid;
+        DBManager.insertData(u);
+
+        return View();
+    }
+    public IActionResult Delete(string Emailid){
+        DBManager.deleteData(Emailid);
+        return View();
+    }
+ 
 
 
     public IActionResult Welcome()
     {
+        return View();
+    }
+      public IActionResult List()
+    {
+        allUser au=new allUser();
+        List<User>user=au.GetallUList();
+        ViewData["User"]=user;
         return View();
     }
 

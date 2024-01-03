@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\Sourabh_Digital_Studio
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/hp/OneDrive/Desktop/DOTNET Practise/Sourabh Digital Studio/Sourabh_Digital_Studio/Views/Home/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hp/OneDrive/Desktop/DOTNET Practise/Sourabh Digital Studio/Sourabh_Digital_Studio/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/OneDrive/Desktop/DOTNET Practise/Sourabh Digital Studio/Sourabh_Digital_Studio/Views/Home/Insert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbnNlcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/OneDrive/Desktop/DOTNET Practise/Sourabh Digital Studio/Sourabh_Digital_Studio/Views/Home/List.cshtml]
@@ -36,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/hp/OneDrive/Desktop/DOTNET Practise/Sourabh Digital Studio/Sourabh_Digital_Studio/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/OneDrive/Desktop/DOTNET Practise/Sourabh Digital Studio/Sourabh_Digital_Studio/Views/Home/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/OneDrive/Desktop/DOTNET Practise/Sourabh Digital Studio/Sourabh_Digital_Studio/Views/Home/Welcome.cshtml]
