@@ -9,3 +9,4 @@ C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BOL\obj\Debu
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BOL\obj\Debug\net8.0\refint\BOL.dll
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BOL\obj\Debug\net8.0\BOL.pdb
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BOL\obj\Debug\net8.0\ref\BOL.dll
+C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BOL\obj\Debug\net8.0\BOL.sourcelink.json

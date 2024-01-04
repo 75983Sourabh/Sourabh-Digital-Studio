@@ -13,3 +13,4 @@ C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\DAL\obj\Debu
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\DAL\obj\Debug\net8.0\refint\DAL.dll
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\DAL\obj\Debug\net8.0\DAL.pdb
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\DAL\obj\Debug\net8.0\ref\DAL.dll
+C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\DAL\obj\Debug\net8.0\DAL.sourcelink.json

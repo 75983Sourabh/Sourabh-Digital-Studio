@@ -15,3 +15,4 @@ C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BLL\obj\Debu
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BLL\obj\Debug\net8.0\refint\BLL.dll
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BLL\obj\Debug\net8.0\BLL.pdb
 C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BLL\obj\Debug\net8.0\ref\BLL.dll
+C:\Users\hp\OneDrive\Desktop\DOTNET Practise\Sourabh Digital Studio\BLL\obj\Debug\net8.0\BLL.sourcelink.json

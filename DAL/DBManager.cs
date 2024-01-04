@@ -6,7 +6,7 @@ using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using Org.BouncyCastle.Asn1.Ocsp;
 
-public static class DBManager
+public  class DBManager
 {
     public static string conString = @"server=localhost;port=3306;user=root;password=Shivani@123;database=sourabh";
 
@@ -60,7 +60,7 @@ public static class DBManager
         }
         return allUser;
     }
-    public static void RegisterData(User u)
+    public static void insertData(User u)
     {
        // bool status = false;
         string query = "insert into User values(@Id,@Username,@Emailid,@Phone,@Password)";
@@ -94,4 +94,57 @@ public static class DBManager
 
     }
    
+public static void UpdateData(User u){
+    string query ="update User set Username=@Username,Password=@Password where Emailid=@Emailid";
+    MySqlConnection con=new MySqlConnection();
+    con.ConnectionString=conString;
+    MySqlCommand command=new MySqlCommand(query,con);
+    command.Parameters.AddWithValue("@Username",u.Username);
+    command.Parameters.AddWithValue("@Password",u.Password);
+    command.Parameters.AddWithValue("@Emailid",u.Emailid);
+
+try
+{
+    con.Open();
+    command.ExecuteNonQuery();
+}
+catch (System.Exception e)
+{
+    System.Console.WriteLine(e.Message);
+    
+    throw;
+}
+finally{
+    con.Close();
+
+}
+
+
+}
+public static void deleteData(string Emailid){
+    MySqlConnection con=new MySqlConnection();
+    con.ConnectionString=conString;
+    string query="delete from User where Emailid=@Emailid";
+    MySqlCommand command=new MySqlCommand(query,con);
+    command.Parameters.AddWithValue("@Emailid", Emailid);
+    try
+    {
+        con.Open();
+        command.ExecuteNonQuery();
+
+
+    }
+    catch (System.Exception e)
+    {
+        System.Console.WriteLine("error Occured"+e.Message);
+        throw;
+    }
+    finally{
+        con.Close();
+    }
+
+}
+
+
+
 }
