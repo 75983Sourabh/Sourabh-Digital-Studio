@@ -6,7 +6,7 @@ using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using Org.BouncyCastle.Asn1.Ocsp;
 
-public  class DBManager
+public class DBManager
 {
     public static string conString = @"server=localhost;port=3306;user=root;password=Shivani@123;database=sourabh";
 
@@ -62,11 +62,11 @@ public  class DBManager
     }
     public static void insertData(User u)
     {
-       // bool status = false;
+        // bool status = false;
         string query = "insert into User values(@Id,@Username,@Emailid,@Phone,@Password)";
         MySqlConnection conn = new MySqlConnection();
         conn.ConnectionString = conString;
-        MySqlCommand command=new MySqlCommand(query,conn);
+        MySqlCommand command = new MySqlCommand(query, conn);
         command.Parameters.AddWithValue("@Id", u.Id);
         command.Parameters.AddWithValue("@Username", u.Username);
         command.Parameters.AddWithValue("@Emailid", u.Emailid);
@@ -77,7 +77,7 @@ public  class DBManager
         {
             conn.Open();
             command.ExecuteNonQuery();
-           // status = true;    
+            // status = true;    
 
         }
         catch (System.Exception e)
@@ -85,7 +85,8 @@ public  class DBManager
             System.Console.WriteLine(e.Message);
             throw;
         }
-        finally{
+        finally
+        {
             conn.Close();
         }
         // return status;
@@ -93,57 +94,61 @@ public  class DBManager
 
 
     }
-   
-public static void UpdateData(User u){
-    string query ="update User set Username=@Username,Password=@Password where Emailid=@Emailid";
-    MySqlConnection con=new MySqlConnection();
-    con.ConnectionString=conString;
-    MySqlCommand command=new MySqlCommand(query,con);
-    command.Parameters.AddWithValue("@Username",u.Username);
-    command.Parameters.AddWithValue("@Password",u.Password);
-    command.Parameters.AddWithValue("@Emailid",u.Emailid);
 
-try
-{
-    con.Open();
-    command.ExecuteNonQuery();
-}
-catch (System.Exception e)
-{
-    System.Console.WriteLine(e.Message);
-    
-    throw;
-}
-finally{
-    con.Close();
-
-}
-
-
-}
-public static void deleteData(string Emailid){
-    MySqlConnection con=new MySqlConnection();
-    con.ConnectionString=conString;
-    string query="delete from User where Emailid=@Emailid";
-    MySqlCommand command=new MySqlCommand(query,con);
-    command.Parameters.AddWithValue("@Emailid", Emailid);
-    try
+    public static void UpdateData(User u)
     {
-        con.Open();
-        command.ExecuteNonQuery();
+        string query = "update User set Username=@Username,Password=@Password where Emailid=@Emailid";
+        MySqlConnection con = new MySqlConnection();
+        con.ConnectionString = conString;
+        MySqlCommand command = new MySqlCommand(query, con);
+        command.Parameters.AddWithValue("@Username", u.Username);
+        command.Parameters.AddWithValue("@Password", u.Password);
+        command.Parameters.AddWithValue("@Emailid", u.Emailid);
+
+        try
+        {
+            con.Open();
+            command.ExecuteNonQuery();
+        }
+        catch (System.Exception e)
+        {
+            System.Console.WriteLine(e.Message);
+
+            throw;
+        }
+        finally
+        {
+            con.Close();
+
+        }
 
 
     }
-    catch (System.Exception e)
+    public static void deleteData(string Emailid)
     {
-        System.Console.WriteLine("error Occured"+e.Message);
-        throw;
-    }
-    finally{
-        con.Close();
-    }
+        MySqlConnection con = new MySqlConnection();
+        con.ConnectionString = conString;
+        string query = "delete from User where Emailid=@Emailid";
+        MySqlCommand command = new MySqlCommand(query, con);
+        command.Parameters.AddWithValue("@Emailid", Emailid);
+        try
+        {
+            con.Open();
+            command.ExecuteNonQuery();
 
-}
+
+        }
+        catch (System.Exception e)
+        {
+            System.Console.WriteLine("error Occured" + e.Message);
+            throw;
+        }
+        finally
+        {
+            con.Close();
+        }
+
+    }
 
 
 
