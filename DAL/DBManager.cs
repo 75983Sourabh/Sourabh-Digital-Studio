@@ -19,7 +19,6 @@ public class DBManager
         MySqlConnection conn = new MySqlConnection();
         conn.ConnectionString = conString;
         string query = "select * from User";
-
         try
         {
             MySqlCommand command = new MySqlCommand(query, conn);
@@ -149,7 +148,50 @@ public class DBManager
         }
 
     }
+public static User GetById(int Id)
+    {
+        User u=null;
+        MySqlConnection con = new MySqlConnection();
+        con.ConnectionString = conString;
+        string query = "select * from Student where Id=@Id";
+        MySqlCommand command = new MySqlCommand(query, con);
+        // command.Parameters.AddWithValue("@Id", Id);
+        try
+        {
+            con.Open();
+ MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                int id = int.Parse(reader["Id"].ToString());
+                string username = reader["Username"].ToString();
+                string email = reader["Emailid"].ToString();
+                string phone = reader["Phone"].ToString();
+                string password = reader["Password"].ToString();
 
 
+                u  = new User
+                {
+                    Id = id,
+                    Username = username,
+                    Emailid = email,
+                    Phone = phone,
+                    Password = password
+
+
+
+                };
+
+        }}
+        catch (System.Exception e)
+        {
+            System.Console.WriteLine("error Occured" + e.Message);
+            throw;
+        }
+        finally
+        {
+            con.Close();
+        }
+return u;
+    }
 
 }

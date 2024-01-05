@@ -1,0 +1,48 @@
+"<form method="post">
+<h1>Welcome to search byid</h1>
+
+
+id :<input type="text" name="Id"/>
+<button type="submit">Search</button><br/>
+</form>
+@using BOL;
+
+
+<div>
+    <h2>Welcome to Sourabh Digital Studio</h2>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+    </style>
+    @{
+        List<User>GetallUList=(List<User>)ViewData["User"];
+        <table class="table table-dark">  
+            <tr>
+                <th>Username</th>
+                <th>Emailid</th>
+                <th>Phone number</th>
+                <th>Password</th>
+                </tr>
+            
+              <ol>
+              
+                @foreach(User u in GetallUList){
+                 <tr> <td>  <li><a href="/User/details/@u.Id">@u.Username</a>
+                    </li></td> 
+                    <td><li><a href="/User/details/@u.Emailid">@u.Emailid</a>
+                    </li></td>
+                   <td>  <li><a href="/User/details/@u.Phone">@u.Phone</a>
+                    </li></td>
+                   <td>  <li><a href="/User/details/@u.Password">@u.Password</a>
+                    </li></td>  </tr>
+                    
+                }
+           </ol>
+           
+            
+            </table>
+    }
+</div>

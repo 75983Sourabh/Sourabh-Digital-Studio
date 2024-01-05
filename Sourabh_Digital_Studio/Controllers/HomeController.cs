@@ -89,8 +89,23 @@ public class HomeController : Controller
         DBManager.deleteData(Emailid);
         return View();
     }
-
-
+[HttpGet]
+public IActionResult GetById()
+    { 
+        allUser au = new allUser();
+        List<User> user = au.GetallUList();
+        ViewData["User"] = user;
+        return View();
+     
+        return View();
+    }
+[HttpPost]
+public IActionResult GetById(int Id)
+    {
+        
+        DBManager.GetById(Id);
+        return View();
+    }
 
     public IActionResult Welcome()
     {
